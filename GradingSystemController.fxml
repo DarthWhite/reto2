@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--Sistema Estadistico para calificaciones en el proyecto Mintic Uninorte 2021-->
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GradingSystemController">
+  <children>
+    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="500.0" prefWidth="640.0" VBox.vgrow="ALWAYS">
+         <children>
+            <Label layoutX="96.0" layoutY="28.0" text="Sistema Estadistico">
+               <font>
+                  <Font name="Comic Sans MS" size="51.0" />
+               </font>
+               <effect>
+                  <DropShadow blurType="GAUSSIAN" height="95.13" radius="35.2025" width="47.68">
+                     <color>
+                        <Color red="0.10956790298223495" green="0.0346003882586956" blue="0.9342105388641357" />
+                     </color>
+                  </DropShadow>
+               </effect>
+            </Label>
+            <TextField id="txtEntryInt" fx:id="txtEntryInt" layoutX="96.0" layoutY="124.0" />
+            <TextArea id="txtEntryFloat" fx:id="txtEntryFloat" layoutX="96.0" layoutY="167.0" prefHeight="200.0" prefWidth="149.0" />
+            <Button id="btnCalculate" fx:id="btnCalculate" layoutX="268.0" layoutY="124.0" mnemonicParsing="false" onAction="#calculate" text="CALCULAR" />
+            <TextArea id="txtResult" fx:id="txtResult" layoutX="379.0" layoutY="167.0" prefHeight="90.0" prefWidth="200.0" />
+         </children>
+    </AnchorPane>
+  </children>
+</VBox>

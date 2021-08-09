@@ -1,7 +1,5 @@
-import java.util.Scanner;
-import java.util.Vector;
 
-    
+import java.util.Vector;   
 
 public class GradingSystem {
 
@@ -9,6 +7,8 @@ public class GradingSystem {
     // Constructor de la clase GradingSystem
     public GradingSystem() {
     }
+
+    
 
     //Declarando vectores para responder las preguntas
     Vector<Float> cal = new Vector<Float>(){};
@@ -67,7 +67,7 @@ public class GradingSystem {
         //¿Cuál es el estudiante con el mejor desempeño para la materia geografía?
         float geoAlta=objCal.num_max(matGeo);
         
-        int geoPos= -1;//Variable para asignar la posicion del alumno
+        int geoPos= 0;//Variable para asignar la posicion del alumno
 
         //Ciclo for para encontrar la posicion del alumno
         for (int i=0;i<matGeo.length;i++){
